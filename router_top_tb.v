@@ -64,7 +64,7 @@ module router_top_tb;
 	always #5 clock = !clock;
 	
 	always@(posedge clock)
-	begin: a
+	begin:
 		while(!vld_out_0)#1;
 		read_enb_0 = 1;
 		while(vld_out_0)#1;
@@ -72,7 +72,7 @@ module router_top_tb;
 	end
 	
 	always@(posedge clock)
-	begin: b
+	begin:
 		while(!vld_out_1)#1;
 		read_enb_1 = 1;
 		while(vld_out_1)#1;
@@ -80,7 +80,7 @@ module router_top_tb;
 	end
 	
 	always@(posedge clock)
-	begin: c
+	begin:
 		while(!vld_out_2)#1;
 		read_enb_2 = 1;
 		while(vld_out_2)#1;
