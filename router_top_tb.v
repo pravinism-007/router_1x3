@@ -63,13 +63,13 @@ module router_top_tb;
 	
 	always #5 clock = !clock;
 	
-	/*always@(posedge clock)
+	always@(posedge clock)
 	begin: a
 		while(!vld_out_0)#1;
 		read_enb_0 = 1;
 		while(vld_out_0)#1;
 		read_enb_0 = 0;
-	end*/
+	end
 	
 	always@(posedge clock)
 	begin: b
